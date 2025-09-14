@@ -50,7 +50,9 @@ so others can easily **read, modify, and expand it**.
 ### 🔑 Popup UI – API Key & Model Setup
 This is the popup that opens when you click the extension icon in Chrome:  
 
-![Popup UI](./ui-screenshots/extension-settings.png)
+![Popup UI](./chatbot-extension/ui-screenshots/extension-settings.png)
+
+
 
 It includes:  
 - **API Key field** (with show/hide toggle, and local storage only)  
@@ -64,7 +66,7 @@ It includes:
 ### 💬 Sidebar Chatbot UI
 This is injected into the current webpage, toggled by a floating button:  
 
-![Chatbot Sidebar](./ui-screenshots/sidebar.png)
+![Chatbot Sidebar](./chatbot-extension/ui-screenshots/sidebar.png)
 
 It includes:  
 - **Chat log** for user & bot messages  
