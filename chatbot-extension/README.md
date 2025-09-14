@@ -50,7 +50,7 @@ so others can easily **read, modify, and expand it**.
 ### 🔑 Popup UI – API Key & Model Setup
 This is the popup that opens when you click the extension icon in Chrome:  
 
-![Popup UI](./ui-screenshots/popup.png)
+![Popup UI](./ui-screenshots/extension-settings.png)
 
 It includes:  
 - **API Key field** (with show/hide toggle, and local storage only)  
