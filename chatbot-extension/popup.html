@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>API Key Setup</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; width: 320px; margin: 12px; background: #1e1e1e; color: #f1f1f1;}
+    label { display:block; margin-top:8px; font-size:0.9rem; color:#f1f1f1; }
+    input[type="text"], input[type="password"] { width:100%; padding:8px; margin-top:6px; box-sizing:border-box; background: #444;}
+    .row { display:flex; gap:8px; align-items:center; margin-top:8px; }
+    button { padding:4px 6px; border:0; background:#444; color:#fff; border-radius:6px; cursor:pointer; }
+    button.clear { background:#b33; }
+    #status { margin-top:10px; font-size:0.9rem; }
+    small { color:#666; display:block; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <h3>Extension Settings</h3>
+
+  <label for="apiKeyInput">API Key</label>
+  <div style="display:flex; gap:8px; align-items:center;">
+    <input id="apiKeyInput" type="password" placeholder="Enter API key" />
+    <button id="toggleVisibility">👁 Show</button>
+  </div>
+  <small>Key is stored locally (chrome.storage.local). It is never sent to the page.</small>
+
+  <label for="apiUrlInput">API URL</label>
+  <input id="apiUrlInput" type="text" placeholder="https://api.openai.com/v1/chat/completions" />
+
+  <label for="modelInput">Model (OpenAI)</label>
+  <input id="modelInput" type="text" placeholder="gpt-4o-mini" />
+
+  <div class="row">
+    <button id="saveKey">Save</button>
+    <button id="clearKey" class="clear">Clear Key</button>
+  </div>
+
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
