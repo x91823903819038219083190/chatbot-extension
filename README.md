@@ -48,31 +48,10 @@ so others can easily **read, modify, and expand it**.
 > The actual UI may look slightly different when you load the extension.
 
 ### 🔑 Popup UI – API Key & Model Setup
-This is the popup that opens when you click the extension icon in Chrome:  
-
 ![Popup UI](./chatbot-extension/ui-screenshots/extension-settings.png)
 
-
-
-It includes:  
-- **API Key field** (with show/hide toggle, and local storage only)  
-- **API URL field** (default: `https://api.openai.com/v1/chat/completions`)  
-- **Model field** (default: `gpt-4o-mini`)  
-- Save & Clear buttons  
-- Status feedback  
-
----
-
 ### 💬 Sidebar Chatbot UI
-This is injected into the current webpage, toggled by a floating button:  
-
 ![Chatbot Sidebar](./chatbot-extension/ui-screenshots/sidebar.png)
-
-It includes:  
-- **Chat log** for user & bot messages  
-- **Typing indicator** while waiting for response  
-- **Input box** with multiline support (Shift+Enter = newline)  
-- **Send button**  
 
 ---
 
@@ -87,8 +66,17 @@ Feel free to fork and extend this project:
 
 ---
 
+## 🧪 Testing
+
+For quick prototyping of the extension’s static files, you can pair this project with the  
+[Live Reload Development Server](https://github.com/x91823903819038219083190/live-reload-development-server).  
+
+This is optional — the extension works on its own, but the server helps during development  
+by automatically reloading the browser when you edit files.
+
+---
+
 ## 📜 License
 
 MIT License – free to use, modify, and share.  
 
----
