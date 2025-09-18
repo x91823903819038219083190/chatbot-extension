@@ -55,6 +55,22 @@ so others can easily **read, modify, and expand it**.
 
 ---
 
+## 📂 Repository Structure
+
+```text
+.
+├── manifest.json            # Chrome extension manifest (v3)
+├── popup.html               # Popup for API key & settings
+├── sidebar.html             # Chatbot sidebar UI
+├── background.js            # Background script for API calls
+├── content.js               # Injects sidebar into webpages
+├── styles/                  # CSS files for popup & sidebar
+├── icons/                   # Extension icons
+└── README.md                # Project documentation
+```
+
+---
+
 ## 🛠️ Contribution
 
 Feel free to fork and extend this project:  
@@ -76,7 +92,22 @@ by automatically reloading the browser when you edit files.
 
 ---
 
+## ⚙️ Compatibility
+
+- Built for **Chrome Manifest v3** extensions  
+- Tested on **latest Chrome desktop** (macOS/Linux/Windows)  
+- Should also work on Chromium-based browsers (Edge, Brave, etc.)  
+
+---
+
+## ⚠️ Known Limitations
+
+- No persistent chat history (clears when sidebar is closed)  
+- API errors are shown as plain text (no rich error handling yet)  
+- Sidebar styling is minimal (can be improved with animations or themes)  
+
+---
+
 ## 📜 License
 
 MIT License – free to use, modify, and share.  
-
